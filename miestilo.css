@@ -1,0 +1,28 @@
+body{
+    background-image: url(https://img3.wallspic.com/previews/9/7/3/6/5/156379/156379-poligono_multicolor-poligono-morado-triangulo-violeta-x750.jpg);
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+#principal{
+
+    background-color: rgb(224, 182, 233);
+        border:solid 3px rgb(221, 221, 230);
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    fieldset{
+        margin-bottom: 10px;
+        border:solid 2px rgb(158, 154, 160);
+    }
+    legend{
+        border: solid 3px rgb(216, 166, 205);
+        background-color:rgb(187, 112, 171);
+        padding:1px ;
+        font-weight: bold;
+    }
+
+    fieldset:hover{
+        background-color: rgb(78, 77, 77);
+    }
+    
