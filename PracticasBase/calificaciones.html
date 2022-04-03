@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Datos en Formularios</title>
+    <script>
+        function saludo() {
+            let uno = document.fdatos.datoa.value
+            let dos = document.fdatos.datob.value
+            let tres = document.fdatos.datoc.value
+            uno = parseInt(uno);
+            dos = parseInt(dos);
+            tres = parseInt(tres);
+            media = (uno + dos + tres) / 3;
+
+            if (media < 5) {
+                resultat = "Suspendido";
+            } else {
+                resultat = "Aprobado";
+            }
+
+            document.write(`<h3>La nota final es ${resultat}</h3>`)
+        }
+    </script>
+</head>
+
+<body>
+    <h3>CALIFICACIONES </h3>
+    <form name="fdatos">
+        Primer numero:<input type="text" size="10" name="datoa" /> Segundo numero:<input type="text" size="10" name="datob" /> Tercer numero:<input type="text" size="10" name="datoc" />
+        <input type="button" value="Pulsa aqui" onclick="saludo()" />
+    </form>
+</body>
+
+</html>

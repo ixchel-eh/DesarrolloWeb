@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO NUMERO MAYOR</title>
+    <script>
+        function respuesta() {
+            let mes = document.fdatos.mes.value
+            mes = parseInt(mes);
+    if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
+        resultado = " tiene 31 dias";
+    } else {
+        if (mes == 2)
+        resultado = " puede tener menos de 30 dias";
+        else
+        resultado = " tiene 30 dias";
+    }
+    document.write(`<h3>Este mes  ${resultado}</h3>`);
+}
+       </script>
+</head>
+
+<body>
+            <form name="fdatos">
+                Introduzca el numero del mes: <input type="text" size="10" name="mes" />
+                <input type="button" value="Pulsa aquì" onclick="respuesta()" />
+            </form>
+</body>
+
+</html>

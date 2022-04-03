@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Datos en Formularios auto</title>
+    <script>
+        function auto() {
+            let marca = document.fdatos.datoa.value
+            let modelo = document.fdatos.datob.value
+
+            if((marca=="ford")&&(modelo=="fiesta")){
+                descuento=5;
+
+            } if((marca=="ford")&&(modelo=="focus")){
+                descuento=10;
+            }
+
+            document.write(`<h3>El resultado es${descuento}</h3>`)
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Descuentos </h3>
+    <form name="fdatos">
+        Marca:<input type="text" size="10" name="datoa" /> Modelo:<input type="text" size="10" name="datob" /> 
+        <input type="button" value="Pulsa aqui" onclick="auto()" />
+    </form>
+</body>
+
+</html>

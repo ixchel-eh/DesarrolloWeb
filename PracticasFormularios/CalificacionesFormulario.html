@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO NUMERO MAYOR</title>
+    <script>
+        function comparacion() {
+            let num1 = document.fdatos.num1.value
+            let num2 = document.fdatos.num2.value
+
+            if (num1 > num2) {
+                resultado = "el primero";
+            }
+            else {
+                resultado = "el segundo";
+            }
+
+            document.write(`<h3>El mayor es  ${resultado}</h3>`);
+        }
+    </script>
+
+
+        <body>
+            <form name="fdatos">
+                Digita el primer numero: <input type="text" size="10" name="num1" />
+                Digita el segundo numero: <input type="text" size="10" name="num2" />
+                <input type="button" value="Pulsa aquì" onclick="comparacion()" />
+            </form>
+        </body>
+  
+
+</head>
+
+<body>
+</body>
+
+</html>
